@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.CommentsDao">
+    <select id="getAllComments" resultType="com.pojo.Comments">
+        select * from comments where chatid=#{chatid} order by commenttime desc
+    </select>
+    <select id="getAllComments2" resultType="com.pojo.Comments">
+        select * from comments where chatid=#{chatid} order by trumps desc
+    </select>
+
+    <delete id="deleteComment" parameterType="com.pojo.Comments">
+        delete from comments where commentid=#{commentid}
+    </delete>
+
+    <insert id="makeComment" parameterType="com.pojo.Comments">
+        insert into comments (commentid,releasername,releaserid,comment,commenttime,chatid) values (#{commentid},#{releasername},#{releaserid},#{comment},#{commenttime},#{chatid})
+    </insert>
+
+    <select id="getTrumps" resultType="com.pojo.Comments">
+        select * from comments where commentid=#{commentid}
+    </select>
+
+    <update id="giveTrump" parameterType="com.pojo.Comments">
+        update comments set trumps=#{trumps} where commentid=#{commentid}
+    </update>
+
+    <select id="getCommentById" resultType="com.pojo.Comments">
+        select * from comments where commentid=#{commentid}
+    </select>
+
+    <delete id="deleteAllComments" parameterType="com.pojo.Comments">
+        delete from comments where chatid=#{chatid}
+    </delete>
+
+    <select id="getAllMyComments" resultType="com.pojo.Comments">
+        select * from comments where releasername=#{releasername}
+    </select>
+</mapper>

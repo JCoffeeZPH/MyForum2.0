@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.dao.UserDao">
+
+    <select id="getAllUser" resultType="com.pojo.User">
+        SELECT * FROM user
+    </select>
+    
+    <insert id="addUser" parameterType="com.pojo.User">
+        insert into user (username, password,registertime,selfIntroduction, qqnum, email, sex) values (#{username},#{password},#{registertime},#{selfIntroduction},#{qqnum},#{email},#{sex})
+    </insert>
+
+    <select id="checkUsername" resultType="com.pojo.User">
+        select * from user where username=#{username}
+    </select>
+    <select id="checkEmail" resultType="com.pojo.User">
+        select * from user where email=#{email}
+    </select>
+
+    <update id="updatemessage" parameterType="com.pojo.User">
+        update user set username=#{username},password=#{password},qqnum=#{qqnum},selfIntroduction=#{selfIntroduction},sex=#{sex} where userid=#{userid}
+    </update>
+
+    <select id="searchId" resultType="int">
+        select userid from user where user.username=#{username}
+    </select>
+
+</mapper>

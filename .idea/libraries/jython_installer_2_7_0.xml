@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="jython-installer-2.7.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jython-installer-2.7.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/jython-installer-2.7.0.jar!/" recursive="false" />
+  </library>
+</component>
