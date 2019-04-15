@@ -1,6 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="MyForum">
-    <output-path>$PROJECT_DIR$/out/artifacts/MyForum</output-path>
-    <root id="archive" name="MyForum.war" />
-  </artifact>
-</component>

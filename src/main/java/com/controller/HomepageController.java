@@ -68,12 +68,12 @@ public class HomepageController {
     @ResponseBody
     public ModelAndView udateMessage(User user, HttpServletRequest request){ //更新个人信息
         ModelAndView modelAndView = new ModelAndView();
-        if(request.getSession().getAttribute("usernameflag") != null || user.getUsername().equals("") || user.getUsername() == null || user.getUsername().trim().equals("") || user.getPassword().equals("") ||
-        user.getPassword().trim().equals("") || user.getPassword().length() < 6 || user.getPassword().length() > 16 || user.getQqnum().length() < 5 || user.getQqnum().length() > 11
-         || user.getQqnum().trim().equals("") || user.getQqnum().equals("") || user.getQqnum() == null || user.getPassword() == null){
-            modelAndView.setViewName("updatedefeat");
-            return modelAndView;
-        }
+//        if(request.getSession().getAttribute("usernameflag") != null || user.getUsername().equals("") || user.getUsername() == null || user.getUsername().trim().equals("") || user.getPassword().equals("") ||
+//        user.getPassword().trim().equals("") || user.getPassword().length() < 6 || user.getPassword().length() > 16 || user.getQqnum().length() < 5 || user.getQqnum().length() > 11
+//         || user.getQqnum().trim().equals("") || user.getQqnum().equals("") || user.getQqnum() == null || user.getPassword() == null){
+//            modelAndView.setViewName("updatedefeat");
+//            return modelAndView;
+//        }
         String username = (String) request.getSession().getAttribute("username");
         User user1 = userService.checkUsername(username);
 //        System.out.println(username + " " + user.getUsername());

@@ -1,6 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="MyForum1.1">
-    <output-path>E:/HTML/html实例图</output-path>
-    <root id="archive" name="MyForum1.1.war" />
-  </artifact>
-</component>

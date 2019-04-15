@@ -30,13 +30,13 @@ public class RegisterController {
         System.out.println(user.getUsername());
         System.out.println(request.getSession().getAttribute("usernameflag"));
         System.out.println(request.getSession().getAttribute("emailflag"));
-        if(user.getUsername().equals("") || user.getUsername().trim().equals("") || user.getUsername() == null || request.getSession().getAttribute("usernameflag") != null
-                || user.getPassword().trim().equals("") || user.getPassword().equals("") || user.getPassword() == null || user.getPassword().length() < 6 || user.getPassword().length() > 16 ||
-        user.getQqnum().trim().equals("") || user.getQqnum().equals("") || user.getQqnum() == null || user.getQqnum().length() < 5 || user.getQqnum().length() > 11 || user.getEmail().trim().equals("") ||
-        user.getEmail().equals("") || !user.getEmail().endsWith("qq.com") || user.getEmail() == null || request.getSession().getAttribute("emailflag") != null || !user.getPassword().equals(repassword)){
-            modelAndView.setViewName("registerdefeat");
-            return modelAndView;
-        }
+//        if(user.getUsername().equals("") || user.getUsername().trim().equals("") || user.getUsername() == null || request.getSession().getAttribute("usernameflag") != null
+//                || user.getPassword().trim().equals("") || user.getPassword().equals("") || user.getPassword() == null || user.getPassword().length() < 6 || user.getPassword().length() > 16 ||
+//        user.getQqnum().trim().equals("") || user.getQqnum().equals("") || user.getQqnum() == null || user.getQqnum().length() < 5 || user.getQqnum().length() > 11 || user.getEmail().trim().equals("") ||
+//        user.getEmail().equals("") || !user.getEmail().endsWith("qq.com") || user.getEmail() == null || request.getSession().getAttribute("emailflag") != null || !user.getPassword().equals(repassword)){
+//            modelAndView.setViewName("registerdefeat");
+//            return modelAndView;
+//        }
         modelAndView.addObject("email",user.getEmail());
         request.getSession().setAttribute("username",user.getUsername());
         request.getSession().setAttribute("password",user.getPassword());
