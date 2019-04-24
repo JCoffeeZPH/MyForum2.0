@@ -117,10 +117,10 @@ class ImageUploadUtil {  //上传图片的工具类
                         String realPath2 = "F:/upload";
                         OutputStream os = new FileOutputStream(new File(realPath2+"\\"+fileName));
 
-                        System.out.println(in == null);
+//                        System.out.println(in == null);
                         int b = 0;
                         byte[] bytes = new byte[1024];
-                        while((b = in.read(bytes))!= -1){ //读取文件
+                        while((b = in.read(bytes))!= -1){ //读取文件，存到本地磁盘，并通过虚拟目录映射
                             os.write(bytes,0,b);
 //                            System.out.println(new String(bytes,0,b));
                         }

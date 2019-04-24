@@ -9,8 +9,8 @@
 <html>
 <head>
     <title>登录界面</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
     <link rel="icon" type="image/png" href="/assets/img/favicon.ico">
-
     <%
         String username = "";
         String password = "";
@@ -89,7 +89,7 @@
 <body>
     <form action="login" method="post">
         <div class="one3" align="center">
-        <table style="border-style:none;border: 1px solid #f0fff0;border-radius: 6px; text-align: center">
+        <table style="border-style:none;border: 1px solid #f0fff0;border-radius: 6px; text-align: center;margin-top: 40%">
             <tr>
                 <td>
                     <input name="username" type="text" id="username" placeholder="username" style="width: 200px;height: 30px" onblur="checkusername()" value="<%=username%>">
@@ -113,14 +113,9 @@
             </tr>
             <tr>
                 <td>
-                    <input id="subt" style="text-align:center;border-radius: 6px;width: 250px;background-color: #00c4ff;border: none; font-size: medium;opacity:1;display: none" value="登录" type="submit"/>
+                    <input id="subt" style="text-align:center;border-radius: 6px;width: 250px;background-color: #00c4ff;border: none; font-size: medium;opacity:1;" value="登录" type="submit"/>
                 </td>
             </tr>
-            <%--<tr>--%>
-                <%--<td>--%>
-                    <%----%>
-                <%--</td>--%>
-            <%--</tr>--%>
         </table>
         </div>
     </form>
@@ -128,24 +123,24 @@
         <a href="register.jsp">注 册</a>
     </div>
 
-<div class="container">
-    <div id="captcha" style="position: relative;"></div>
-    <div id="msg"></div>
-</div>
+<%--<div class="container">--%>
+    <%--<div id="captcha" style="position: relative;"></div>--%>
+    <%--<div id="msg"></div>--%>
+<%--</div>--%>
 
-<script type="text/javascript" src="js/jigsaw.js"></script>
-<script type="text/javascript">
-    jigsaw.init(document.getElementById('captcha'), function () {
-        document.getElementById("msg").innerHTML='验证成功';
-        setTimeout(function() {
-            document.getElementById("buttonid").click();});
-    })
-</script>
+<%--<script type="text/javascript" src="js/jigsaw.js"></script>--%>
+<%--<script type="text/javascript">--%>
+    <%--jigsaw.init(document.getElementById('captcha'), function () {--%>
+        <%--document.getElementById("msg").innerHTML='验证成功';--%>
+        <%--setTimeout(function() {--%>
+            <%--document.getElementById("buttonid").click();});--%>
+    <%--})--%>
+<%--</script>--%>
 
-<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
-</div>
-<div style="text-align: center">
-    <button onclick="toggle('subt')" id="buttonid" style="display: none"></button>
-</div>
+<%--<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">--%>
+<%--</div>--%>
+<%--<div style="text-align: center">--%>
+    <%--<button onclick="toggle('subt')" id="buttonid" style="display: none"></button>--%>
+<%--</div>--%>
 </body>
 </html>

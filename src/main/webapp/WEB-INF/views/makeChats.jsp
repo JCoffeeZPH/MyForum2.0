@@ -9,6 +9,7 @@
 <html>
 <head>
     <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
     <title>发布话题</title>
     <script type="text/javascript" src="/ckeditor/ckeditor.js"></script>
     <script src="js/registerutils.js"></script>

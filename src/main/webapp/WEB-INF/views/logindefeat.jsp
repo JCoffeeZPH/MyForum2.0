@@ -10,6 +10,7 @@
 <head>
     <title>登录失败</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
     <meta http-equiv="refresh" content="3;url=login.jsp">
 </head>
 <body>

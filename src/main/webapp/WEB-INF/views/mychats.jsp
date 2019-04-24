@@ -13,9 +13,7 @@
     <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
     <link rel="icon" type="image/png" href="assets/img/favicon.ico">
     <title>My Chats</title>
-
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
 
     <!-- Bootstrap core CSS     -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />

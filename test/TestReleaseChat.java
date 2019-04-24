@@ -31,7 +31,7 @@ public class TestReleaseChat {
         chats.setChatid(UUID.randomUUID().toString().replaceAll("-","_"));
         chats.setUserid(2);
         chats.setUsername("admin1");
-        chats.setContent("Java简单易学吗？");
+        chats.setContent("test");
         chats.setReleasetime(new Timestamp(new Date().getTime()));
         chatsDao.release(chats);
     }
