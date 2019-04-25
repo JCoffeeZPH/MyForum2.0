@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>更改失败</title>
+    <%--视适配--%>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
     <link rel="icon" type="image/png" href="assets/img/favicon.ico">
     <meta http-equiv="refresh" content="3;url=/updatedefeat">
